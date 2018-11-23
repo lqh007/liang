@@ -1,17 +1,13 @@
 package com.seven.dao.mapper;
 
 import com.seven.dao.entity.User;
-import com.baomidou.mybatisplus.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 
-/**
- * <p>
- *  Mapper 接口
- * </p>
- *
- * @author liang123
- * @since 2018-11-21
- */
+@Mapper
+public interface UserMapper {
 
-public interface UserMapper extends BaseMapper<User> {
-
+    @Select("SELECT * FROM user WHERE id = #{id}")
+    User selectUserById(@Param("id") Integer id);
 }

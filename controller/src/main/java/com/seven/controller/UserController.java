@@ -1,14 +1,11 @@
 package com.seven.controller;
 
 
-import com.seven.common.utils.ApiResponse;
 import com.seven.dao.entity.User;
 import com.seven.service.UserService;
-import org.springframework.web.bind.annotation.RequestMapping;
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-
-import javax.annotation.Resource;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * <p>
@@ -21,17 +18,12 @@ import javax.annotation.Resource;
 @Controller
 @RequestMapping("/dao/user")
 public class UserController {
-    @Resource
+    @Autowired
     private UserService userService;
 
-    @RequestMapping("/insertUser")
-    public ApiResponse insertUser(User user){
-        return userService.insertUser(user);
-    }
-
     @RequestMapping("/selectUserList")
-    public ApiResponse selectUserList(){
-        return userService.selectUserList();
+    public User selectUserList(Integer id){
+        return userService.selectUserById(id);
     }
 
 }

@@ -3,11 +3,11 @@ package com.seven;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 
+@ServletComponentScan
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.seven.service","com.seven.dao"})
-@MapperScan("com.seven.dao.mapper")
+@MapperScan("com.seven.dao")
 public class WebApplication {
 
     public static void main(String[] args) {
