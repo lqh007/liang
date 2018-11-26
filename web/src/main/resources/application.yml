@@ -1,9 +1,7 @@
 #server
 server:
   port=8080
-mybatis:
-  typeAliasesPackage: com.seven.dao.entity
-  mapperLocations: classpath:mapper/*.xml
+
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
@@ -11,5 +9,11 @@ spring:
     username: root
     password: Root.123456
     driver-class-name: com.mysql.jdbc.Driver
+
+#mybatis
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*.xml
+  #实体扫描，多个package用逗号或者分号分隔
+  typeAliasesPackage: com.seven.dao.entity
 
 

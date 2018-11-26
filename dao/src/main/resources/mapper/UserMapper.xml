@@ -12,4 +12,16 @@
         <result column="update_time" property="updateTime" />
     </resultMap>
 
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, user_name AS userName, password, nick_name AS nickName, create_time AS createTime, update_time AS updateTime
+    </sql>
+    <select id="selectBysql" resultMap="BaseResultMap">
+        select * from user
+    </select>
+
+    <select id="selectListPage" resultMap="BaseResultMap">
+        select * from user
+    </select>
+
 </mapper>
