@@ -9,7 +9,6 @@
         <module name="common" />
         <module name="controller" />
         <module name="dao" />
-        <module name="mybatisplus-spring-boot" />
         <module name="service" />
         <module name="web" />
       </profile>

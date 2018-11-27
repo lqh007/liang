@@ -18,7 +18,7 @@ import java.util.*;
 public class CodeGenerator {
     private static String packageName="seven";    //文件路径
     private static String authorName="Liang";     //作者
-    private static String table="user";                  //table名字
+    private static String table="user_info";                  //table名字
     private static String prefix="";                     //table前缀
     private static File file = new File(packageName);
     private static String path = file.getAbsolutePath();
