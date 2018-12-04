@@ -95,6 +95,15 @@ public class UserInfo extends Model<UserInfo> {
         return this.uid;
     }
 
+
+    /**
+     * 密码盐.
+     * @return
+     */
+    public String getCredentialsSalt(){
+        return this.username+this.salt;
+    }
+
     @Override
     public String toString() {
         return "UserInfo{" +

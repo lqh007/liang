@@ -20,6 +20,7 @@
       <module name="liang" target="1.8" />
       <module name="mybatisplus-spring-boot" target="1.7" />
       <module name="service" target="1.8" />
+      <module name="shiro" target="1.8" />
       <module name="web" target="1.8" />
     </bytecodeTargetLevel>
   </component>

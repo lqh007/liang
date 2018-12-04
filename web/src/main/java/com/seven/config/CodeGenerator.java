@@ -62,8 +62,8 @@ public class CodeGenerator {
                         })
                         .setDriverName("com.mysql.jdbc.Driver")
                         .setUsername("root")
-                        .setPassword("Root.123456")
-                        .setUrl("jdbc:mysql://144.202.107.147:3306/liang?characterEncoding=utf8&useSSL=false")
+                        .setPassword("root")
+                        .setUrl("jdbc:mysql://47.105.177.96:3306/liang?characterEncoding=utf8&useSSL=false")
         ).setStrategy(
                 // 策略配置
                 new StrategyConfig()
