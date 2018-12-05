@@ -24,6 +24,16 @@ public class SysPermission extends Model<SysPermission> {
     private String name;
     @TableField("resource_type")
     private String resourceType;
+    private String code;
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
     /**
      * 资源路径
      */

@@ -12,6 +12,7 @@
         <result column="parent_id" property="parentId" />
         <result column="parent_ids" property="parentIds" />
         <result column="available" property="available" />
+        <result column="code" property="code" />
     </resultMap>
 
     <!-- 通用查询结果列 -->

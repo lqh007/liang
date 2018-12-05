@@ -5,6 +5,7 @@ import java.io.Serializable;
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * <p>
@@ -36,6 +37,16 @@ public class SysRole extends Model<SysRole> {
      */
     private String available;
 
+
+    private List<SysPermission> permissionList;
+
+    public List<SysPermission> getPermissionList() {
+        return permissionList;
+    }
+
+    public void setPermissionList(List<SysPermission> permissionList) {
+        this.permissionList = permissionList;
+    }
 
     public Integer getId() {
         return id;
@@ -72,6 +83,11 @@ public class SysRole extends Model<SysRole> {
     @Override
     protected Serializable pkVal() {
         return this.id;
+    }
+
+    public SysRole(String role, String description) {
+        this.role = role;
+        this.description = description;
     }
 
     @Override

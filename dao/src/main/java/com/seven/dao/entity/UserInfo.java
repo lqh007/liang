@@ -5,6 +5,7 @@ import java.io.Serializable;
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * <p>
@@ -41,6 +42,15 @@ public class UserInfo extends Model<UserInfo> {
      */
     private String state;
 
+    private List<SysRole> roleList;
+
+    public List<SysRole> getRoleList() {
+        return roleList;
+    }
+
+    public void setRoleList(List<SysRole> roleList) {
+        this.roleList = roleList;
+    }
 
     public Integer getUid() {
         return uid;
