@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.seven.dao.mapper.SysRoleMapper">
-
-    <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.seven.dao.entity.SysRole">
-        <id column="id" property="id" />
-        <result column="role" property="role" />
-        <result column="description" property="description" />
-        <result column="available" property="available" />
-    </resultMap>
-
-    <!-- 通用查询结果列 -->
-    <sql id="Base_Column_List">
-        id, role, description, available
-    </sql>
-
+  <resultMap id="BaseResultMap" type="com.seven.dao.entity.SysRole">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="role" jdbcType="VARCHAR" property="role" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="available" jdbcType="VARCHAR" property="available" />
+  </resultMap>
 </mapper>

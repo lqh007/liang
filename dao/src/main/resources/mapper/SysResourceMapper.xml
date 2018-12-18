@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.seven.dao.mapper.SysResourceMapper">
+  <resultMap id="BaseResultMap" type="com.seven.dao.entity.SysResource">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="resource_type" jdbcType="VARCHAR" property="resourceType" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="permission" jdbcType="VARCHAR" property="permission" />
+    <result column="parent_id" jdbcType="INTEGER" property="parentId" />
+    <result column="parent_ids" jdbcType="VARCHAR" property="parentIds" />
+    <result column="available" jdbcType="VARCHAR" property="available" />
+  </resultMap>
+</mapper>
