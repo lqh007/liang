@@ -31,6 +31,7 @@ public class SysUserServiceImpl implements SysUserService {
     private SysResourceMapper resourceMapper;
 
 
+
     @Override
     public SysUser getSysUserByUserName(String userName) {
 

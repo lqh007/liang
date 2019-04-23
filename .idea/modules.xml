@@ -6,6 +6,10 @@
       <module fileurl="file://$PROJECT_DIR$/controller/controller.iml" filepath="$PROJECT_DIR$/controller/controller.iml" />
       <module fileurl="file://$PROJECT_DIR$/dao/dao.iml" filepath="$PROJECT_DIR$/dao/dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/liang.iml" filepath="$PROJECT_DIR$/.idea/liang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_plus/mybatis_plus.iml" filepath="$PROJECT_DIR$/mybatis_plus/mybatis_plus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty_client/netty_client.iml" filepath="$PROJECT_DIR$/netty_client/netty_client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty_server/netty_server.iml" filepath="$PROJECT_DIR$/netty_server/netty_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pay/pay.iml" filepath="$PROJECT_DIR$/pay/pay.iml" />
       <module fileurl="file://$PROJECT_DIR$/service/service.iml" filepath="$PROJECT_DIR$/service/service.iml" />
       <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
     </modules>
