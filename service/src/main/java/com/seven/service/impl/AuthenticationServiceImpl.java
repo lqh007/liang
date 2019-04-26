@@ -25,7 +25,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
             String username = ((UserDetails) principal).getUsername();
             SysUser user = userService.getSysUserByUserName(username);
             if(user==null){
-                return hasPermisson;
+                return false;
             }
             List<String> urlList = userService.getResourceListByUserId(user.getUid());
 

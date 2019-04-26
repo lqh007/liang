@@ -1,14 +1,14 @@
 package com.seven;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
-import tk.mybatis.spring.annotation.MapperScan;
 
 @ServletComponentScan
 @SpringBootApplication
-@MapperScan("com.seven.dao")
+@MapperScan("com.seven.mybatis_plus.mapper")
 @EnableScheduling
 public class WebApplication {
 
